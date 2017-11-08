@@ -14,16 +14,21 @@ nav .brand-logo {
 p {
   line-height: 2rem;
 }
-img {
+.parallax-img {
   opacity: 0.5;
 }
 .button-collapse {
   color: #26a69a;
 }
-
+.card-title{
+  background-color: grey;
+}
+.inline {
+  display: inline-block;
+}
 .parallax-container {
-  margin-top: 40px;
-  min-height: 380px;
+  margin-top: 50px;
+  min-height: 500px;
   line-height: 0;
   height: auto;
   /* color: rgba(255,255,255,.9); */
@@ -64,11 +69,7 @@ h1, h5 {
   height: 32px;
   border: 0px;
 }
-.linked1{
-  width: 56px;
-  height: 56px;
-  border: 0px;
-}
+
 .icons{
   display: inline-block;
   height: 56px;
