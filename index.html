@@ -9,8 +9,20 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#rel-exp">Relevant Experience</a></li>
+        <li><a href="#projects">My Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+              
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -20,11 +32,15 @@
         <div class="row center">
           <h5 class="header col s12 text-lighten-2">Front End Web Developer</h5>
           <div class="icons">
-              <a target=“_blank” href="https://github.com/ElenaOl"><img class = "linked" src="github-logo.png" alt="Unsplashed GitHubProfile"></a>
-              <a target=“_blank” href="https://www.linkedin.com/in/elena-olekh/"><img class = "linked" src="linkedin.png" alt="Unsplashed linkedInProfile"></a>
-              <a target=“_blank” href="mailto:pravutiner@gmail.com"><img class = "linked" src="email.png" alt="Unsplashed pravutiner.gmail.com"></a>
-              <a target=“_blank” href="elena-olekh-resume.pdf"><img class = "linked" src="resume.png" alt="Unsplashed Elena-Olekh-resume"></a>
-          </div>  
+              <!-- <a target=“_blank” href="https://github.com/ElenaOl"><img class = "linked" src="github-logo.png" alt="Unsplashed GitHubProfile"></a> -->
+              <a target=“_blank” class="share-icon" href="https://github.com/ElenaOl"><span class="fa  fa-github-square fa-3x"></span></a>
+              <a target=“_blank” class="share-icon" href="https://www.linkedin.com/in/elena-olekh/"><span class="fa  fa-linkedin-square fa-3x"></span></a>
+              <!-- <a target=“_blank” href="https://www.linkedin.com/in/elena-olekh/"><img class = "linked" src="linkedin.png" alt="Unsplashed linkedInProfile"></a> -->
+              <!-- <a target=“_blank” href="mailto:pravutiner@gmail.com"><img class = "linked" src="email.png" alt="Unsplashed pravutiner.gmail.com"></a> -->
+              <a target=“_blank” class="share-icon" href="mailto:pravutiner@gmail.com"><span class="fa fa-envelope fa-3x"></span></a>
+              <!-- <a target=“_blank” href="elena-olekh-resume.pdf"><img class = "linked" src="resume.png" alt="Unsplashed Elena-Olekh-resume"></a> -->
+              <a target=“_blank” class="share-icon" href="elena-olekh-resume.pdf"><span class="fa fa-id-card fa-3x"></span></a>
+          </div>   
         </div>
         <br><br>
 
@@ -34,19 +50,33 @@
   </div>
 
 
-  <div class="container">
-    <div class="section">
+  
 
       <!--   Icon Section   -->
+    
+            
+    <div class="section" id="about">           
       <div class="row">
-        <div class="col s12">
           <div class="icon-block">
-            <h5 class="left-align">About</h5>
-            <p class="left-align">I am a web developer with a passion for science and dedication to details. My previous experience in research, project management and regulatory affairs contributed to my love for exploring new topics and passion to learn programming languages that allow me to create new web sites and application. I am ready to implement my newly earned knowledge in web development and contribute to the world through my creativity.</p>
+            <div class="col s10 push-s2"><span>
+              <h5>About</h5>
+              <p class="about">I am a web developer with a passion for science and dedication to details.<br/> 
+                My previous experience in research, project management and regulatory affairs contributed to 
+                my love for exploring new topics and passion to learn programming languages that allow me to 
+                create new web sites and application. I am ready to implement my newly earned knowledge in web 
+                development and contribute to the world through my creativity.</p></span>
+            </div>
+            <div class="col s2 pull-s10"><span><img class="me" src="elena.jpg"></span></div>
           </div>
-        </div>
-
-        <div class="col s12">
+      </div>  
+    </div>    
+ 
+    
+      
+<div class="container">
+  <div class="section">    
+    <div class="row">
+        <div class="col s12" id="skills">
           <div class="icon-block">
             <h5 class="left-align">Skills</h5>
             
@@ -64,7 +94,7 @@
           </div>
         </div>
 
-        <div class="col s12">
+        <div class="col s12" id="rel-exp">
           <div class="icon-block">
             <h5 class="left-align">Relevant Experience</h5>
 
@@ -80,80 +110,104 @@
     </div>
   </div>
 
-<div className="card  hoverable  ">
-  <div className="card-image border-tlr-radius">
-    <div class="row">
-      <div class="col s4">
-        <div class="card">
-          <div class="card-image">
-            <img src="background2.jpg">
-            <span class="card-title"><i class="material-icons">games</i> The Durak game. Building a game from scratch using HTML/CSS/JS</span>
+
+<div class="row" id="projects">         
+  <div><h5 class="left-align project">Projects</h5></div>  
+  <div class="col s12 m6 l4">
+    <div class="icon-block">
+      <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="background2.jpg">
+            <span class="card-title title"><i class="material-icons">games</i> The "Durak" game. Famous card game from Russia</span>
           </div>
           <div class="card-content">
-              <h5>About Durak game</h5>
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <span class="card-title activator grey-text text-darken-4">About "Durak" game<i class="material-icons right">more_vert</i></span>
+            <p>This game was my first expirience of game building after 2 weeks of learning HTML/CSS/JS.
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">My first project<i class="material-icons right">close</i></span>
+            <h5>Technologies used</h5>
+            <ul>
+              <li>HTML, CSS</li>
+              <li>JavaScript, jQuery, DOM</li>
+              <li>JSON</li>
+              <li>localStorage</li>
+              <li>Bootstrap, Bootstrap Modal</li> 
+            </ul>
           </div>
           <div class="card-action">
-            <a target=“_blank” href="http://durakgameelenao.azurewebsites.net/">Please enjoy the game</a>
+              <a target=“_blank” href="http://durakgameelenao.azurewebsites.net/">Enjoy the game</a>
+              <a target=“_blank” href="https://github.com/ElenaOl/project1-durakGame"><img class = "linked" src="github-logo.png" alt="Unsplashed GitHubProfile"></a>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
-  </div>
-</div>    
-
-  <div class="row">
-      <div class="col s4">
-        <div class="card">
-          <div class="card-image">
-            <img src="background3.jpg">
-            <span class="card-title"><i class="material-icons">local_grocery_store</i> Your family grocery list that you can share. Using  HTML/CSS/JS/Node.js/express/Sequelize</span>
-          </div>
-          <div class="card-content">
-              <h5>About Grocery List</h5>
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a target=“_blank” href="https://grocery-app-eo.herokuapp.com/">Please check it out for yourself</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-        <div class="col s4">
+       
+      <div class="col s12 m6 l4">
+        <div class="icon-block">
           <div class="card">
-            <div class="card-image">
-              <img src="umbrellas.png">
-              <span class="card-title"><i class="material-icons">beach_access</i> RainyDay - app that helps you to save and develop good habits. Using React/MongoDB</span>
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="background3.jpg">
+                <span class="card-title title"><i class="material-icons">local_grocery_store</i> Your family grocery list that you can share.</span>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">About Grocery list<i class="material-icons right">more_vert</i></span>
+                <p> Coming to this project I was thinking of implementing RESTful routes the best way I can learn 
+                  and at the same time creating something I can use in day to day basis.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Grocery list<i class="material-icons right">close</i></span>
+                <h5>Technologies used</h5>
+                <ul>
+                  <li>HTML/CSS/JavaScript</li>
+                  <li>Bootstrap</li>
+                  <li>Node.js, express, npm, RESTful, Auth</li>
+                  <li>Sequelize</li>
+                </ul>
+              </div>
+              <div class="card-action">
+                  <a target=“_blank” href="https://grocery-app-eo.herokuapp.com/">Try it yourself</a>
+                  <a target=“_blank” href="https://github.com/ElenaOl/grocery-app"><img class = "linked" src="github-logo.png" alt="Unsplashed GitHubProfile"></a>
+              </div>
             </div>
-            <div class="card-content">
-              <h5>About RainyDay</h5>
-              <p>Rainy Day was a group project, we had a chance to collaborate during creation and github group experience. 
-              On this project I was the git master. I also contributed in React and back end routes pages for savings lists.
-              </p>
-              <h5>Technologies used</h5>
-              <ul>
-                <li>React</li>
-                <li>Materialize</li>
-                <li>HTML/JSX, CSS</li>
-                <li>JavaScript, jQuery, DOM</li>
-                <li>JSON, Fetch, Axios</li>
-                <li>Node.js, npm, RESTful, Auth</li>
-                <li>mongoDB</li>
-              </ul>
-            </div>
-            <div class="card-action">
-              <a target=“_blank” href="https://evening-sea-90772.herokuapp.com/">Please check it out for yourself</a>
+        </div>
+      </div>  
+
+  <div class="col s12 m6 l4">
+    <div class="icon-block">
+      <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator rainy-img" src="umbrellas.png">
+            <span class="card-title title"><i class="material-icons">beach_access</i> RainyDay - helps you develop good habits.</span>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">About Rainy Day<i class="material-icons right">more_vert</i></span>
+            <p>Rainy Day was a group project, we had a chance to collaborate during creation and github group experience. 
+                On this project I was the git master. I also contributed in React and back end routes pages for savings lists.
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Rainy Day<i class="material-icons right">close</i></span>
+            <h5>Technologies used</h5>
+            <ul>
+              <li>React</li>
+              <li>Materialize</li>
+              <li>HTML/JSX, CSS</li>
+              <li>JavaScript, jQuery, DOM</li>
+              <li>JSON, Fetch, Axios</li>
+              <li>Node.js, npm, RESTful, Auth</li>
+              <li>mongoDB</li>
+            </ul>
+          </div>
+          <div class="card-action">
+              <a target=“_blank” href="https://evening-sea-90772.herokuapp.com/">Try it yourself</a>
               <a target=“_blank” href="https://github.com/ElenaOl/rainyday"><img class = "linked" src="github-logo.png" alt="Unsplashed GitHubProfile"></a>
-            </div>
           </div>
         </div>
-      </div>
-      
-  
+    </div>
+  </div>  
 
   <footer class="page-footer white center">
     <div class="container">
