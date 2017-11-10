@@ -12,7 +12,7 @@ nav  {
   font-size: 20px;
   font-family: 'Permanent Marker', cursive;
 }
-span {
+span, .btn{
   font-family: 'Permanent Marker', cursive;
   font-size: 16px;
 }
@@ -28,7 +28,7 @@ a {
 li{
   font-size: 16px;
 }
-.parallax-img {
+.parallax-img, .ga {
   opacity: 0.5;
 }
 .button-collapse {
@@ -92,17 +92,17 @@ h1, h5 {
   display: inline-block;
   height: 56px;
 }
-.me{
+.me, .ga{
   height: 200px;
   width: 200px;
 }
 .project{
   margin-left: 25px;
 }
-.fa, .header, p, h5, h1 {
+.fa, .header, p, h5, h1, .btn {
   color: #473d3d;
 }
-.nav-wrapper{
+.nav-wrapper, .btn {
   background-color: grey;
 }
 #menuItems li a:hover, .socialIconDiv a:hover, #emailAddress a:hover {
