@@ -10,7 +10,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet">
 </head>
 <body> 
   
@@ -38,9 +38,9 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center text-lighten-2">Elena Olekh</h1>
+        <h1 class="header center text-lighten-4">Elena Olekh</h1>
         <div class="row center">
-          <h5 class="header col s12 text-lighten-2">Front End Web Developer</h5>
+          <h5 class="header col s12 text-lighten-4">Front End Web Developer</h5>
           <div class="icons">
               <a target=“_blank” class="share-icon" href="https://github.com/ElenaOl"><span class="fa  fa-github-square fa-3x"></span></a>
               <a target=“_blank” href="https://www.linkedin.com/in/elena-olekh/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
@@ -48,7 +48,7 @@
               <a target=“_blank” class="share-icon" href="img/elena-olekh-resume.pdf"><span class="fa fa-id-card fa-3x"></span></a>
           </div> 
           <div >
-              <a href="#about" class="btn waves-effect waves-light grey">About me</a>
+              <a href="#about" class="btn waves-effect waves-light grey" onclick="Materialize.fadeInImage('#about')">About me</a>
             </div>  
         </div>
         <br><br>
@@ -59,14 +59,13 @@
   </div>
 
 
-  <div class="row" id="about">  
-    <!-- <div class="section">   -->
+  <div class="row center" id="about">  
           <div class="icon-block">
             <div class="col s12 m6 l4">
               <div class="card grey darken-1">
-                <div class="card-content white-text about left-align">
-                  <span class="card-title">Skills</span>
-                    <p>Languages: HTML, CSS/SASS, JavaScript, Ruby, SQL <br/>
+                <div class="card-content white-text about">
+                  <span class="card-title left-align">Skills</span>
+                    <p class="left-align">Languages: HTML, CSS/SASS, JavaScript, Ruby, SQL <br/>
                     Frameworks: Bootstrap, Express, Node, Rails, React <br/>
                     Libraries: jQuery <br/>
                     Databases: MongoDB, Mongoose, PostgreSQL, Sequelize <br/>
@@ -78,35 +77,32 @@
                     Organization/Planning/Prioritization <br/>
                     Customer support/Relationship management </p>
                     <br/>
-                    <a href="#projects" class="btn waves-effect waves-light grey">My Progects</a>
+                    <a href="#projects" class="btn waves-effect waves-light grey center" onclick="Materialize.fadeInImage('#projects')">My Progects</a> 
                 </div>
               </div>
             </div>
-          <!-- </div> -->
+          
         </div>       
-        <!-- <div class="section">   -->
+        
             <div class="icon-block">
               <div class="col s12 m6 l4">
                 <div class="card grey">
-                  <div class="card-content white-text about center-align">
-                    <img class="me responsive-img circle" src="img/elena.jpg">
-                    <!-- <span class="card-title">About</span> -->
-                    <p>I am a web developer with a passion for science and dedication to details.<br/> 
+                  <div class="card-content white-text about">
+                    <img class="me responsive-img circle center" src="img/elena.jpg">
+                    <p>I am a web developer with a passion for science and dedication to details.
                       My previous experience in research, project management and regulatory affairs contributed to 
-                      my love for exploring new topics <br/> and passion to learn programming languages that allow me to 
-                      create new web sites and application. <br/> I am ready to implement my newly earned knowledge in web 
+                      my love for exploring new topics and passion to learn programming languages that allow me to 
+                      create new web sites and application. I am ready to implement my newly earned knowledge in web 
                       development and contribute to the world through my creativity.</p>
                   </div>
                 </div>
               </div>
             </div>
-          <!-- </div>         -->
-              
-          <!-- <div class="section">   -->
+         
             <div class="icon-block">
               <div class="col s12 m6 l4">
                 <div class="card grey darken-1">
-                  <div class="card-content white-text about">
+                  <div class="card-content white-text about center">
                     <span class="card-title left-align">Relevant Experience</span>
                     <p class="left-align">Web Development Immersive Aug 2017 - Nov 2017
                         General Assembly | Seattle, WA <br/>
@@ -120,7 +116,6 @@
                 </div>
               </div>
             </div>
-          <!-- </div>         -->
       </div>
 
 

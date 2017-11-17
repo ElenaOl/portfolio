@@ -10,19 +10,19 @@ nav ul a,
 nav  {
   color: #473d3d;
   font-size: 20px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 span, .btn{
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 p {
   line-height: 2rem;
   font-size: 16px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 a {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 li{
@@ -76,7 +76,7 @@ li{
 }
 
 h1, h5 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .project-img {
@@ -86,7 +86,8 @@ h1, h5 {
   height: 320px;
 }
 .about {
-  height: 600px;
+  height: 630px;
+  text-justify: center;
 }
 .icons{
   display: inline-block;
