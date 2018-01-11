@@ -8,7 +8,6 @@
 
 nav ul a,
 nav  {
-  color: #473d3d;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
@@ -20,16 +19,37 @@ p {
   line-height: 2rem;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  color: #473d3d;
 }
 a {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 li{
-  font-size: 16px;
+  font-size: 30px;
+  
 }
-.parallax-img, .ga {
+
+.move {
+  margin-left: 10px;
+  color: #77abd1;
+}
+.elena {
+  background-color: white;
+  color: #473d3d;
+  font-size: 24px;
+}
+/* .parallax-img {
   opacity: 0.5;
+} */
+.small{
+  font-size: 20px;
+  color: #77abd1;
+}
+.icon {
+  height: 35px;
+  width: 35px;
 }
 .button-collapse {
   color: #473d3d;
@@ -42,10 +62,11 @@ li{
   display: inline-block;
 }
 .parallax-container {
-  margin-top: 10px;
+  margin-top: 5px;
   min-height: 500px;
   line-height: 0;
   height: auto;
+  text-align: center;
   /* color: rgba(255,255,255,.9); */
 }
   .parallax-container .section {
@@ -83,22 +104,31 @@ h1, h5 {
   height: 250px;
 }
 .card-content{
-  height: 320px;
+  height: 360px;
+}
+.exp-card{
+  height: 150px;
 }
 .about {
-  height: 630px;
+  height: 500px;
   text-justify: center;
 }
 .icons{
   display: inline-block;
   height: 56px;
 }
-.me, .ga{
+.me {
   height: 200px;
   width: 200px;
+  margin-top: 30px;
+}
+.ga {
+  height: 200px;
+  width: 165px;
 }
 .project{
   margin-left: 25px;
+  color: #77abd1;
 }
 .fa, .header, p, h5, h1, .btn {
   color: #473d3d;
@@ -106,13 +136,32 @@ h1, h5 {
 .nav-wrapper, .btn {
   background-color: grey;
 }
+.writing-mode{
+  writing-mode: vertical-rl;
+  margin-left: 20px;
+}
+.exp{
+  color: #77abd1;
+}
+.web{
+  padding: 20px;
+  margin: 0 100px;
+}
+.card-panel{
+  height: 150px;
+}
 #menuItems li a:hover, .socialIconDiv a:hover, #emailAddress a:hover {
   color: #00247F;
 }
 #about{
   margin-top: 50px;
 }
-
+#me {
+  color: #473d3d;
+}
+#skills{
+  margin-top: 60px;
+}
 footer.page-footer {
   margin: 0;
 }

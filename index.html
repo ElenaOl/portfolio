@@ -13,109 +13,155 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet">
 </head>
 <body> 
-  
+  <nav class="elena">
+    <ul>
+      <li class="move">Elena Olekh</li>
+      <li>&nbsp&nbsp&nbsp</li>
+      <li class="small">Full Stack Web Developer</li>
+    </ul>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a target=“_blank” href="https://github.com/ElenaOl"><img class="icon" src="img/github.png"></a></li>
+      <li><a target=“_blank” href="https://www.linkedin.com/in/elena-olekh/"><img class="icon" src="img/linkedin.png"></a></li>
+      <li><a href="mailto:elena.olekh@gmail.com"><img class="icon" src="img/email.png"></a></li>
+      <li><a target=“_blank” href="img/elena-olekh-resume.pdf"><img class="icon" src="img/resume.png"></a></li>
+    </ul>
+  </nav>
+   
     <nav>
         <div class="nav-wrapper">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="left hide-on-med-and-down">
             <li><a href="#about">About</a></li>
-            <li><a href="#about">Skills</a></li>
-            <li><a href="#about">Relevant Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Relevant Experience</a></li>
             <li><a href="#projects">My Projects</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a href="#about">About</a></li>
-            <li><a href="#about">Skills</a></li>
-            <li><a href="#about">Relevant Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Relevant Experience</a></li>
             <li><a href="#projects">My Projects</a></li>
           </ul>
         </div>
       </nav>
  
               
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center text-lighten-4">Elena Olekh</h1>
-        <div class="row center">
-          <h5 class="header col s12 text-lighten-4">Full Stack Web Developer</h5>
-          <div class="icons">
-              <a target=“_blank” class="share-icon" href="https://github.com/ElenaOl"><span class="fa  fa-github-square fa-3x"></span></a>
-              <a target=“_blank” href="https://www.linkedin.com/in/elena-olekh/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-              <a class="share-icon" href="mailto:pravutiner@gmail.com"><span class="fa fa-envelope fa-3x"></span></a>
-              <a target=“_blank” class="share-icon" href="img/elena-olekh-resume.pdf"><span class="fa fa-id-card fa-3x"></span></a>
-          </div> 
-          <div >
-              <a href="#about" class="btn waves-effect waves-light grey" onclick="Materialize.fadeInImage('#about')">About me</a>
-            </div>  
+<div class="row">
+  <div class="col s12 m7 l7">
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
         </div>
-        <br><br>
-
+      </div>
+      <div class="parallax parallax-img"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+  </div>  
+    <div class="col s12 m5 l5">
+      <div class="parallax-container">
+        <div class="card-content about" id="about">
+          <img class="me responsive-img circle" src="img/elena.jpg">
+          <p id="me">I am a web developer with a passion for science and dedication to details.
+            My previous experience in research, project management and regulatory affairs contributed to 
+            my love for exploring new topics and passion to learn programming languages that allow me to 
+            create new web sites and applications. I am ready to implement my newly earned knowledge in web 
+            development and contribute to the world through my creativity.</p>
+        </div>
       </div>
     </div>
-    <div class="parallax parallax-img"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="center">
+        <a href="#skills" class="btn waves-effect waves-light grey" onclick="Materialize.fadeInImage('#skills')">My Skills</a>
+    </div>  
+</div>
+ 
+  <!-- <div class="icon-block">
+    <div class="col s12">
+      <div class="card grey darken-1">
+        <div class="card-content white-text about">
+          <span class="card-title left-align">Skills</span>
+            <p class="left-align">Languages: HTML, CSS/SASS, JavaScript, Ruby, SQL <br/>
+            Frameworks: Bootstrap, Materialize, Express, Node, Rails, React <br/>
+            Libraries: jQuery, React <br/>
+            Databases: MongoDB, Mongoose, PostgreSQL, Sequelize <br/>
+            Design: Web Fonts <br/>
+            Other: AJAX, Data Structures, Git, Heroku, HTTP, RESTful Web Services <br/>
+            <br/>
+            Project management/Coordination<br/>
+            Communication/Collaboration <br/>
+            Organization/Planning/Prioritization <br/>
+            Customer support/Relationship management </p>
+            <br/>
+            <a href="#projects" class="btn waves-effect waves-light grey center" onclick="Materialize.fadeInImage('#projects')">My Projects</a> 
+        </div>
+      </div>
+    </div>
+            
+  </div>        -->
+  
+  <div class="row" id="skills">
+      <div class="col s12 m4 l4">
+        <div class="card-panel">
+          <h5 class="exp">Languages: </h5>
+          <p>HTML, CSS/SASS, JavaScript, Ruby, SQL</p>
+        </div>
+      </div>
+      <div class="col m4 l4">
+          <div class="card-panel">
+              <h5 class="exp">Frameworks: </h5>
+              <p>Bootstrap, Materialize, Express, Node, Rails</p>
+          </div>
+        </div>
+        <div class="col m4 l4">
+            <div class="card-panel">
+                <h5 class="exp">Libraries: </h5>
+                <p>jQuery, React</p>
+            </div>
+          </div>
+          <div class="col m4 l4">
+              <div class="card-panel">
+                  <h5 class="exp">Databases: </h5>
+                  <p>MongoDB, Mongoose, PostgreSQL, Sequelize</p>
+              </div> 
+            </div>
+            <div class="col m4 l4">
+                <div class="card-panel">
+                    <h5 class="exp">Databases: </h5>
+                    <p>MongoDB, Mongoose, PostgreSQL, Sequelize</p>
+                </div>
+              </div>
+              <div class="col m4 l4">
+                  <div class="card-panel">
+                      <h5 class="exp">Other: </h5>
+                      <p>AJAX, Data Structures, Git, Heroku, HTTP, RESTful Web Services</p>
+                    
+                  </div>
+                </div>
   </div>
 
 
-  <div class="row center" id="about">  
-          <div class="icon-block">
-            <div class="col s12 m6 l4">
-              <div class="card grey darken-1">
-                <div class="card-content white-text about">
-                  <span class="card-title left-align">Skills</span>
-                    <p class="left-align">Languages: HTML, CSS/SASS, JavaScript, Ruby, SQL <br/>
-                    Frameworks: Bootstrap, Materialize, Express, Node, Rails, React <br/>
-                    Libraries: jQuery <br/>
-                    Databases: MongoDB, Mongoose, PostgreSQL, Sequelize <br/>
-                    Design: Web Fonts <br/>
-                    Other: AJAX, Data Structures, Git, Heroku, HTTP, RESTful Web Services <br/>
-                    <br/>
-                    Project management/Coordination<br/>
-                    Communication/Collaboration <br/>
-                    Organization/Planning/Prioritization <br/>
-                    Customer support/Relationship management </p>
-                    <br/>
-                    <a href="#projects" class="btn waves-effect waves-light grey center" onclick="Materialize.fadeInImage('#projects')">My Projects</a> 
-                </div>
-              </div>
-            </div>
-          
-        </div>       
-        
-            <div class="icon-block">
-              <div class="col s12 m6 l4">
-                <div class="card grey">
-                  <div class="card-content white-text about">
-                    <img class="me responsive-img circle center" src="img/elena.jpg">
-                    <p>I am a web developer with a passion for science and dedication to details.
-                      My previous experience in research, project management and regulatory affairs contributed to 
-                      my love for exploring new topics and passion to learn programming languages that allow me to 
-                      create new web sites and applications. I am ready to implement my newly earned knowledge in web 
-                      development and contribute to the world through my creativity.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-            <div class="icon-block">
-              <div class="col s12 m6 l4">
-                <div class="card grey darken-1">
-                  <div class="card-content white-text about center">
-                    <span class="card-title left-align">Relevant Experience</span>
-                    <p class="left-align">Web Development Immersive 2017 General Assembly | Seattle, WA <br/>
-                        <br/>
-                        - A 12 week, 70+ hours per week web development accelerator program. <br/>
-                        <br/>
-                        - Learned about designing, planning, and building web applications on both the front-end and the back-end.</p>  
-                        <br/>
-                        <img class="ga responsive-img circle" src="img/ga.png">            
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="icon-block" id="experience">  
+    <div class="col s12">
+      <div class="card horizontal">
+        <div class="writing-mode">
+          <h5 class="exp">Relevant Experience</h5>
+        </div>
+        <div class="exp-card">
+           <div class="left web">
+            <p> 
+              Web Development Immersive 2017 <br/> General Assembly | Seattle, WA<br/> 
+            </p>
+               <img class="ga responsive-img left" src="img/ga.jpg"> 
+          </div> 
+          <div class="right web">  
+              <p>A 12 week, 70+ hours per week web <br/> development accelerator program. <br/>
+              <br/>
+              Learned about designing, planning, <br/> and building web applications on both <br/> 
+              the front-end and the back-end.</p>  
+          </div>
+          </div>
       </div>
+    </div>    
+  </div>       
+           
 
 
 <div class="row" id="projects">         
@@ -159,7 +205,7 @@
                 <span class="card-title title"><i class="material-icons">local_grocery_store</i> Your family grocery list that you can share</span>
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><h5>About Grocery list</h5><i class="material-icons right">more_vert</i></span>
+                <span class="card-title activator grey-text text-darken-4">About Grocery list<i class="material-icons right">more_vert</i></span>
                 <p> Coming to this project I was thinking of implementing RESTful routes the best way I can learn 
                   and at the same time creating something I can use in day to day basis.
                 </p>
@@ -190,7 +236,7 @@
             <span class="card-title title"><i class="material-icons">beach_access</i> RainyDay - helps you develop good habits</span>
           </div>
           <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><h5>About Rainy Day</h5><i class="material-icons right">more_vert</i></span>
+            <span class="card-title activator grey-text text-darken-4">About Rainy Day<i class="material-icons right">more_vert</i></span>
             <p>Rainy Day was a group project, we had a chance to collaborate during creation and github group experience. 
                 On this project I was the git master. I also contributed in React and back end routes pages for savings lists.
             </p>
@@ -225,7 +271,7 @@
               <span class="card-title title"><i class="material-icons">exposure</i> Math Chalange - first math experience in a fun way</span>
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"><h5>About Math Chalange</h5><i class="material-icons right">more_vert</i></span>
+              <span class="card-title activator grey-text text-darken-4">About Math Chalange<i class="material-icons right">more_vert</i></span>
               <p>This project is my practice of Ruby on Rails. I have practiced implementing one to many relationship with Rails while creating a fun game for
                 kids to play. Additional features will be added.
               </p>
@@ -259,7 +305,7 @@
                     <span class="card-title title"><i class="material-icons">sync</i>Trick or Trader - exchange of candy between friends</span>
                   </div>
                   <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4"><h5>About Trick or Trader</h5><i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-darken-4">About Trick or Trader<i class="material-icons right">more_vert</i></span>
                     <p> This was a hackathon project that we won for most innovative idea! We worked as a team with the UX students to implement their design in our app. 
                       It was a huge success! We enjoyed the collaboration very much.    
                     </p>
@@ -275,24 +321,27 @@
                     </ul>
                   </div>
                   <div class="card-action">
-                      <a target=“_blank” href="https://grocery-app-eo.herokuapp.com/">Try it yourself</a>
-                      <a target=“_blank” class="share-icon" href="https://github.com/ElenaOl/grocery-app"><span class="fa  fa-github-square fa-2x"></span></a>
+                      <a target=“_blank” href="https://shrouded-meadow-47004.herokuapp.com/">Try it yourself</a>
+                      <a target=“_blank” class="share-icon" href="https://github.com/ElenaOl/trickortrader"><span class="fa  fa-github-square fa-2x"></span></a>
                   </div>
                 </div>
             </div>
           </div>  
     </div>
   </div>  
+
+  
+
   <footer class="page-footer white center">
     <div class="container">
       <div class="row">
         <div class="col s12">
           <h5 class="text">Contact me</h5>
           <div class="icons">
-            <a target=“_blank” class="share-icon" href="https://github.com/ElenaOl"><span class="fa  fa-github-square fa-3x"></span></a>
-            <a target=“_blank” href="https://www.linkedin.com/in/elena-olekh/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-            <a class="share-icon" href="mailto:pravutiner@gmail.com"><span class="fa fa-envelope fa-3x"></span></a>
-            <a target=“_blank” class="share-icon" href="img/elena-olekh-resume.pdf"><span class="fa fa-id-card fa-3x"></span></a>
+            <a target=“_blank” class="share-icon" href="https://github.com/ElenaOl"><img class="icon" src="img/github.png"></a>
+            <a target=“_blank” href="https://www.linkedin.com/in/elena-olekh/"><img class="icon" src="img/linkedin.png"></a>
+            <a class="share-icon" href="mailto:elena.olekh@gmail.com"><img class="icon" src="img/email.png"></a></li>
+            <a target=“_blank” class="share-icon" href="img/elena-olekh-resume.pdf"><img class="icon" src="img/resume.png"></a>
         </div>   
         </div>
       </div>
